@@ -4,22 +4,27 @@ function Nav(props) {
 
     const {
         contactSelected,
-        setContactSelected
+        setContactSelected,
+        resumeSelected,
+        setResumeSelected,
+        aboutSelected,
+        setAboutSelected
       } = props;
 
 
     return(
         <header className="flex-row px-1">
-        <h2>
+        <h1>
             Hlaing Aung
-        </h2>
+        </h1>
         <nav>
           <ul className="flex-row">
             <li className="mx-2">
-              {/* <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-                About me
-              </a> */}
-              About me 
+              <span onClick={() => {
+                setAboutSelected(true);
+                setContactSelected(false);
+                setResumeSelected(false);
+              }}>About me</span>
             </li>
             {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
               <span onClick={() => setContactSelected(true)}>Contact</span>
@@ -28,10 +33,18 @@ function Nav(props) {
                 Portfolio
             </li>
             <li className="mx-2">
-                <span onClick={() => setContactSelected(true)}>Contact</span>
+                <span onClick={() => {
+                    setContactSelected(true);
+                    setResumeSelected(false);
+                    setAboutSelected(false);
+                }}>Contact</span>
             </li>
             <li className="mx-2">
-                Resume
+                <span onClick={() => {
+                    setResumeSelected(true);
+                    setContactSelected(false);
+                    setAboutSelected(false);
+                }}>Resume</span>
             </li>
           </ul>
         </nav>

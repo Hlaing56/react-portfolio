@@ -32,8 +32,8 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: darkgray;
-  color: var(--light);
+  background: rgb(8, 70, 92);
+  color: goldenrod;
 }
 
 h1,
@@ -50,6 +50,7 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  padding-right: 50px;
 }
 
 h2 {
@@ -88,7 +89,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background-image: url("./images/header.jpeg");
 }
 
 header a {
@@ -182,6 +183,16 @@ textarea {
   justify-content: flex-end;
 }
 
+.flex-resume {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
@@ -210,6 +221,8 @@ textarea {
 .px-1 {
   padding-right: var(--spacing-one);
   padding-left: var(--spacing-one);
+  padding-bottom: 70px;
+  padding-top: 40px;
 }
 
 .px-2 {
