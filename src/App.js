@@ -5,6 +5,7 @@ import ContactForm from "./components/Contact";
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
 
   const [aboutSelected, setAboutSelected] = useState(true);
 
+  const [portfolioSelected, setPortfolioSelected] = useState(false);
+
   return (
     <div>
       <Nav
@@ -24,10 +27,18 @@ function App() {
       setResumeSelected={setResumeSelected}
       aboutSelected={aboutSelected}
       setAboutSelected={setAboutSelected}
+      portfolioSelected={portfolioSelected}
+      setPortfolioSelected={setPortfolioSelected}
       />
       <main>
       {aboutSelected ? (
         <About/>
+      ): (
+        ""
+      )}
+
+      {portfolioSelected ? (
+        <Portfolio/>
       ): (
         ""
       )}
