@@ -33,7 +33,7 @@ function Portfolio() {
         },
         {
             name: "Weather Dashboard",
-            appLink: "https://pure-harbor-24321.herokuapp.com/",
+            appLink: "https://hlaing56.github.io/Weather-Dashboard/",
             gitHub: "https://github.com/Hlaing56/Weather-Dashboard",
             description: "HTML/CSS/JS",
             pic: `${weather}`,
