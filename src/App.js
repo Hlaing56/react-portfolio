@@ -7,53 +7,28 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 
-
 function App() {
 
-  const [contactSelected, setContactSelected] = useState(false);
+  const [currentPage, setCurrentPage] = useState('About');
 
-  const [resumeSelected, setResumeSelected] = useState(false);
-
-  const [aboutSelected, setAboutSelected] = useState(true);
-
-  const [portfolioSelected, setPortfolioSelected] = useState(false);
+  const renderPage = () => {
+    if (currentPage === 'About') {
+      return <About />;
+    }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
+    if (currentPage === 'Contact') {
+      return <ContactForm />;
+    }
+    return <Resume />;
+  };
 
   return (
     <div>
-      <Nav
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}
-      resumeSelected={resumeSelected}
-      setResumeSelected={setResumeSelected}
-      aboutSelected={aboutSelected}
-      setAboutSelected={setAboutSelected}
-      portfolioSelected={portfolioSelected}
-      setPortfolioSelected={setPortfolioSelected}
-      />
+      <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       <main>
-      {aboutSelected ? (
-        <About/>
-      ): (
-        ""
-      )}
-
-      {portfolioSelected ? (
-        <Portfolio/>
-      ): (
-        ""
-      )}
-
-      {contactSelected ? (
-        <ContactForm/>
-      ): (
-        ""
-      )}
-
-      {resumeSelected ? (
-        <Resume/>
-      ): (
-        ""
-      )}
+        {renderPage()}
       </main>
       <Footer/>
     </div>
