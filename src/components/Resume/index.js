@@ -1,5 +1,5 @@
 import React from 'react';
-import coverImage from "../../images/resume.jpg";
+import coverImage from "../../images/Resume.png";
 
 
 function Resume() {
