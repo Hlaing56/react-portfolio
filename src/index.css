@@ -162,6 +162,15 @@ textarea {
   opacity: 1;
 }
 
+.con {
+  display: flex;
+  flex-direction: column;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
 .ow {
   display: flex;
   flex-direction: row;

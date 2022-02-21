@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import Nav from './components/Nav';
-import ContactForm from "./components/Contact";
+import Contact from "./components/Contact";
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -19,7 +19,7 @@ function App() {
       return <Portfolio />;
     }
     if (currentPage === 'Contact') {
-      return <ContactForm />;
+      return <Contact />;
     }
     return <Resume />;
   };

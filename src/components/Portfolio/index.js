@@ -58,7 +58,7 @@ function Portfolio() {
 
   return (
     <section >
-        Portfolio
+        Portfolio (click the name of the project to go to deployed app and gitHub logo to go to the gitHub repo)
         <div className="ow">
         {apps.map((apps) => (
         <div className="container">
@@ -67,8 +67,7 @@ function Portfolio() {
                 <h4>
                     <a href={apps.appLink} style={{ color: "black" }}>
                         {apps.name}
-                    </a>
-                    <a href={apps.gitHub}> 
+                    </a> | <a href={apps.gitHub}> 
                     <img src={github} alt="github logo"/>
                     </a>
                 </h4>
