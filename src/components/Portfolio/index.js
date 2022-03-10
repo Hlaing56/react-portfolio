@@ -6,10 +6,18 @@ import budget from "../../images/budget.png";
 import weather from "../../images/weather.png";
 import note from "../../images/note.png";
 import api from "../../images/api.png";
+import apollo from "../../images/Apollo.png";
 
 function Portfolio() {
 
     const [apps] = useState([
+        {
+            name: "Apollo",
+            appLink: "https://immense-bastion-87765.herokuapp.com/",
+            gitHub: "https://github.com/Hlaing56/apollo",
+            description: "MERN Stack",
+            pic: `${apollo}`,
+        },
         {
             name: "Take It or Leave It",
             appLink: "https://desolate-dusk-43697.herokuapp.com/",
