@@ -8,7 +8,7 @@ function Resume() {
     <section className="my-5 flex-resume">
       <div>
         Download my <a href="https://docs.google.com/document/d/1Xiyl3SQIAHK_bwqkAsyEbhQ3WXMkUY9zxTO6039b1e4/edit?usp=sharing"
-        style={{ textDecoration: "underline" }}> Resume</a>
+        target="_blank" style={{ textDecoration: "underline" }}> Resume</a>
       </div>
       <br/>
       <img src={coverImage} style={{ width: "65%" }} alt="resume" />
