@@ -21,7 +21,7 @@ function App() {
     // if (currentPage === 'Contact') {
     //   return <Contact />;
     // }
-    return <Resume />;
+    return <Portfolio />;
   };
 
   return (
