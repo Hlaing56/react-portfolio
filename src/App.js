@@ -30,7 +30,7 @@ function App() {
       <main>
         {renderPage()}
       </main>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
