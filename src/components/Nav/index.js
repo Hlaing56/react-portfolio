@@ -9,18 +9,18 @@ function Nav({ currentPage, setCurrentPage }) {
       </h1>
       <nav>
         <ul className="flex-row">
-          <li className={`mx-2 ${currentPage === 'About' && 'navActive'}`}>
+          {/* <li className={`mx-2 ${currentPage === 'About' && 'navActive'}`}>
               <span onClick={() => setCurrentPage('About')}>About me</span>
-          </li>
+          </li> */}
           <li className={`mx-2 ${currentPage === 'Portfolio' && 'navActive'}`}>
               <span onClick={() => setCurrentPage('Portfolio')}>Portfolio</span>
           </li>
-          <li className={`mx-2 ${currentPage === 'Contact' && 'navActive'}`}>
+          {/* <li className={`mx-2 ${currentPage === 'Contact' && 'navActive'}`}>
               <span onClick={() => setCurrentPage('Contact')}>Contact</span>
           </li>
           <li className={`mx-2 ${currentPage === 'Resume' && 'navActive'}`}>
               <span onClick={() => setCurrentPage('Resume')}>Resume</span>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
