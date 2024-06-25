@@ -1,6 +1,4 @@
 import React from 'react';
-import coverImage from "../../images/Resume.png";
-import coverImage2 from "../../images/Resume2.png";
 
 
 function Resume() {
@@ -11,9 +9,7 @@ function Resume() {
         target="_blank" style={{ textDecoration: "underline" }}> Resume</a>
       </div>
       <br/>
-      <img src={coverImage} style={{ width: "65%" }} alt="resume" />
-      <br/>
-      <img src={coverImage2} style={{ width: "65%" }} alt="resume page 2" />
+    
     </section>
   );
 }
