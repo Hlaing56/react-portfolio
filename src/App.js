@@ -15,9 +15,9 @@ function App() {
     // if (currentPage === 'About') {
     //   return <About />;
     // }
-    if (currentPage === 'Portfolio') {
-      return <Portfolio />;
-    }
+    // if (currentPage === 'Portfolio') {
+    //   return <Portfolio />;
+    // }
     // if (currentPage === 'Contact') {
     //   return <Contact />;
     // }
